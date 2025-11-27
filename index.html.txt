@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Comparativa de Algoritmos de Machine Learning para Predição de Casos de Dengue</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #004d40; /* Verde escuro */
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container-grafico {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden; /* Garante que o iframe não vaze */
+        }
+        iframe {
+            display: block;
+        }
+        footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🔬 Predição de Casos de Dengue por Machine Learning</h1>
+    </header>
+
+    <div class="container">
+        
+        <h2>Visualização de Séries Temporais (Casos Reais vs. Previsões)</h2>
+        <p>Este gráfico interativo exibe o histórico de casos de dengue e as previsões geradas pelos modelos **XGBoost Poisson** e **LSTM**.</p>
+        <p>Passe o mouse sobre o gráfico para ver os valores exatos e use os botões no canto superior direito para dar zoom.</p>
+
+        <div class="container-grafico">
+            <iframe 
+                src="grafico_dengue_interativo.html" 
+                width="100%" 
+                height="650px" 
+                frameborder="0">
+            </iframe>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Desenvolvido como TCC - Análise Comparativa de Algoritmos de Machine Learning para Predição de Casos de Dengue.</p>
+        <p>Fonte de Dados: API InfoDengue (até 2025). | Modelos: XGBoost Poisson e LSTM.</p>
+    </footer>
+
+</body>
+</html>
